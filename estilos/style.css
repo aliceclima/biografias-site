@@ -25,7 +25,7 @@ body{
     margin: 10% 10% 0rem;
     height: 30%;
     color: #000;
-    font-size: 80%;
+    font-size: 90%;
     font-family: Poppins;
     font-weight: 900;
     line-height: normal;
@@ -50,7 +50,7 @@ body{
     text-decoration: none;
     flex-direction: row;
     margin:0.9rem;
-    font-size: 1.1rem;
+    font-size: 90%;
     font-family: Poppins;
     font-weight: 500;
     line-height: normal;
@@ -64,15 +64,17 @@ a:hover{
     display: flex;
     flex-direction: row;
     justify-content: end;
+    align-items: center;
+    
    
 }
 
 .pesquisa{
     display: flex;
-    justify-content:center;
+    justify-content:start;
     align-items: center;
     flex-direction: row;
-  
+    width: 15rem;
     height: 2.5rem;
     border-radius: 1.25rem;
     background: #D9D9D9;
@@ -94,7 +96,7 @@ a:hover{
     display: flex;
     justify-content: end;
     background-color:#EBBDBD;
-    height: 60vh;
+    height: 70vh;
   
 }
 
@@ -188,34 +190,102 @@ footer{
 @media screen and (max-width: 480px){
   .menu{
     width: 100vw;
-    height: 20vh;
+    height: 10%;
    
   }
   
   .menu_links{
-    width: 60vw;
+    margin: 0;
+    width: 80vw;
     
   }
-  a {
-    font-size: 50%;
+  .menu_links_genero{
+    width: 80%;
   }
+  .texto_genero_musical{
+    font-size: 70%;
+  }
+  a {
+    font-size: 60%;
+   
+  }
+
 .barra_de_pesquisa{
   width: 70vw;
+  font-size: 50%;
+
  
+}
+.pesquisa{
+  height: 50%;
+  width: 90%;
+  margin: 0%;
 }
 .pesquise_cantor{
 
-  font-size: 80%;
+  font-size: 60%;
 }
+
 .imagem_artistas{
   margin: 0;
 }
-.footer{
-  height: 10vh;
-  
+.parte_baixo{
+  height: 40vh;
+}
+
+.palavras_efeito{
+  align-items: center;
+  justify-content: center;
 }
 .texto_footer{
   font-size: 30%;
  
 }
+.footer{
+  height: 20vh;
+  
+}
+
+}
+@media screen and (min-width: 485px){
+
+  .barra_de_pesquisa{
+    margin: 0% 0% 0% 5%;
+    display: flex;
+    justify-content: start;
+    width: 40vw;
+    font-size: 50%;
+    
+     
+  }
+  .pesquisa{
+   
+    height: 50%;
+    width: 80%;
+    margin: 0%;
+  }
+  .pesquise_cantor{
+    font-size: 60%;
+  }
+  
+   
+  }
+}
+@media screen and (min-width: 740px){
+  .barra_de_pesquisa{
+    width: 60vw;
+    font-size: 50%;
+  
+   
+  }
+  .pesquisa{
+    height: 50%;
+    width: 90%;
+    margin: 0%;
+  }
+  .pesquise_cantor{
+  
+    font-size: 60%;
+  }
+  
 }
