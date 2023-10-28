@@ -5,9 +5,20 @@ body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    height: vh;
-}
 
+}
+.texto_genero_musical{
+  display: flex;
+  width:100%;
+  flex-direction: column;
+  margin: 10% 10% 0rem;
+  height: 30%;
+  color: #000;
+  font-size: 90%;
+  font-family: Poppins;
+  font-weight: 900;
+  line-height: normal;
+}
 .menu{
     display: flex;
     flex-wrap: wrap;
@@ -19,29 +30,21 @@ body{
     border-radius: 0.1rem;
 }
 
-.texto_genero_musical{
-    display: flex;
-    width:90%;
-    flex-direction: column;
-    margin: 2rem 2rem 0 2rem;
-    height: 30%;
-    color: #000;
-    font-size: 1.1rem;
-    font-family: Poppins;
-    font-weight: 900;
-    line-height: normal;
-}
+
 .menu_links{
     display: flex;
     padding: 0.8rem;
     flex-direction: row;
     height: 20%;
     margin: 0.8rem 0.8rem 0.8rem 0.3rem;
+    width: 100%;
 }
 .menu_links_genero{
    display: flex;
    flex-direction: row;
    margin: 3rem;
+   width: 100%;
+   font-size: 5rem;
     
 }
  
@@ -50,7 +53,7 @@ body{
     text-decoration: none;
     flex-direction: row;
     margin:0.9rem;
-    font-size: 1.1rem;
+    font-size: 80%;
     font-family: Poppins;
     font-weight: 500;
     line-height: normal;
@@ -68,6 +71,7 @@ a:hover{
 }
 
 .pesquisa{
+    margin: 2rem;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -90,13 +94,14 @@ a:hover{
   
 }
 .parte_baixo{
-  
+  height: 70vh;
+    font-size: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
     background-color:#EBBDBD;
-    height: 70vh;
+    
    
 }
 
@@ -144,7 +149,6 @@ a:hover{
 .coluna_2{
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   color: #000;
   font-family: Poppins;
   font-size: 1.8rem;
@@ -178,13 +182,118 @@ footer{
 }
 
 .texto_footer{
-    height: 30%;
+    height: 90%;
     align-items: center;
+    font-size: 80%;
 }
 
 
-@media (max-width: 480px){
+@media screen and (max-width: 520px){
+  .menu{
+    width: 100vw;
+    height: 20vh;
+   
+  }
+  .menu_links_genero{
+    width: 80vw;
+    padding: 0;
+    margin: 0;
+  }
+  .texto_genero_musical{
+    font-size: 70%;
+  }
+  a {
+    margin: 0;
+  }
 
+  .barra_de_pesquisa{
+    width: 70vw;
+    font-size: 50%;
+  }
+  .pesquisa{
+    height: 50%;
+    width: 90%;
+    margin: 0%;
+  }
+  .pesquise_cantor{
 
-
+    font-size: 60%;
+  }
+    
+  .imagem_artistas{
+    margin: 0;
+  }
+  .parte_baixo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    }
+  .coluna_1.p{
+    
+    margin: 5rem;
+    font-size: 80%;
+  }
+  .texto_rock{
+    font-size: 2.5rem;
+    margin: 2rem;
+  }
+  .img{
+    width: 80%;
+  }
+  .palavras_efeito{
+    align-items: center;
+    justify-content: center;
+  }
+  .texto_footer{
+    font-size: 30%;
+   
+  }
+  .footer{
+    height: 10vh;
+    position: fixed;
+    
+  }
+  
 }
+@media screen and (min-width: 580px){
+  
+  .barra_de_pesquisa{
+    margin: 0% 0% 0% 5%;
+    display: flex;
+    justify-content: start;
+    width: 40vw;
+    font-size: 50%;
+    }
+  .pesquisa{
+    height: 50%;
+    width: 80%;
+    margin: 0%;
+  }
+  .pesquise_cantor{
+      font-size: 60%;
+  }
+    
+    
+  
+}
+@media screen and (min-width: 740px){
+  .barra_de_pesquisa{
+    width: 60vw;
+    font-size: 50%;
+    margin: 1rem;
+  }
+  .pesquisa{
+    height: 50%;
+    width: 90%;
+    margin: 0%;
+  }
+  .pesquise_cantor{
+    
+    font-size: 60%;
+  }
+    
+}
+
+
+
